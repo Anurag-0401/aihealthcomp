@@ -1,0 +1,1813 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="output.css" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- Core CSS -->
+      <script src="output.css"></script>
+      <!-- <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script> -->
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="flex flex-col min-h-screen antialiased text-gray-800">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="relative flex-1 ">
+        <!-- Content will be injected here -->
+      </main>
+
+   </body>
+</html><htmlCode>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+        html { scroll-behavior: smooth; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-[#E5E7EB]">
+    <div id="root" class="flex">
+        <div x-data="{ isOpen: false }" class="relative">
+            <nav class="fixed top-0 left-0 hidden w-64 h-screen bg-white shadow-sm lg:block">
+                <div class="px-6 py-4 border-b border-neutral-200/30">
+                    <h1 class="text-xl font-bold text-neutral-800">HealthAI</h1>
+                </div>
+                
+                <div class="py-4">
+                    <a href="#dashboard" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100 active">
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#health_metrics" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100">
+                        <span>Metrics</span>
+                    </a>
+                    <a href="#nutrition_planner" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100">
+                        <span>Nutrition</span>
+                    </a>
+                    <a href="#exercise_tracker" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100">
+                        <span>Exercise</span>
+                    </a>
+                    <a href="#mental_wellness" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100">
+                        <span>Wellness</span>
+                    </a>
+                    <a href="#sleep_analytics" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100">
+                        <span>Sleep</span>
+                    </a>
+                    <a href="#progress_reports" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100">
+                        <span>Reports</span>
+                    </a>
+                    <a href="#settings" class="flex items-center px-6 py-3 transition-colors text-neutral-600 hover:bg-neutral-100">
+                        <span>Settings</span>
+                    </a>
+                </div>
+
+                <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-neutral-200/30">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-neutral-200"></div>
+                        <div>
+                            <p class="text-sm font-medium text-neutral-800">John Doe</p>
+                            <p class="text-xs text-neutral-500">john@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button 
+                type="button"
+                class="fixed z-50 inline-flex items-center justify-center p-2 rounded-md lg:hidden top-4 right-4 text-neutral-400 hover:text-white hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                @click="isOpen = !isOpen"
+                aria-controls="mobile-menu"
+                :aria-expanded="isOpen"
+            >
+                <svg 
+                    x-show="!isOpen"
+                    x-cloak
+                    class="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg
+                    x-show="isOpen"
+                    x-cloak
+                    class="w-6 h-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Mobile menu -->
+            <div 
+                x-show="isOpen"
+                x-cloak
+                class="fixed inset-0 z-40 lg:hidden bg-neutral-800/80 backdrop-blur-lg"
+                x-transition:enter="transition ease-out duration-100 transform"
+                x-transition:enter-start="opacity-0 scale-95"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75 transform"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-95"
+                @click.away="isOpen = false"
+                @resize.window="if (window.innerWidth > 1024) isOpen = false"
+            >
+                <div class="fixed inset-y-0 left-0 w-full bg-white shadow-xl">
+                    <div class="px-6 py-4 border-b border-neutral-200/30">
+                        <h1 class="text-xl font-bold text-neutral-800">HealthAI</h1>
+                    </div>
+                    <div class="py-4">
+                        <a href="#dashboard" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Dashboard</a>
+                        <a href="#health_metrics" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Metrics</a>
+                        <a href="#nutrition_planner" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Nutrition</a>
+                        <a href="#exercise_tracker" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Exercise</a>
+                        <a href="#mental_wellness" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Wellness</a>
+                        <a href="#sleep_analytics" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Sleep</a>
+                        <a href="#progress_reports" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Reports</a>
+                        <a href="#settings" class="block px-6 py-3 text-neutral-600 hover:bg-neutral-100" @click="isOpen = false">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="flex-1 ml-0 lg:ml-64 min-h-screen overflow-y-auto bg-[#E5E7EB]">
+            <header class="sticky top-0 z-30 px-6 py-4 bg-white border-b border-neutral-200/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <h2 class="text-xl font-semibold text-neutral-800">Dashboard</h2>
+                        <div class="hidden md:block">
+                            <input type="search" placeholder="Search..." class="px-4 py-2 border rounded-lg border-neutral-200/30 focus:outline-none focus:border-blue-500">
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="p-2 rounded-lg text-neutral-600 hover:bg-neutral-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </button>
+                        <button class="p-2 rounded-lg text-neutral-600 hover:bg-neutral-100">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <MountPoint>
+</htmlCode><htmlCode>
+<section id="dashboard" class="p-6 space-y-6">
+    <!-- Welcome Section -->
+    <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+        <div class="flex items-center justify-between">
+            <div>
+                <h2 class="text-2xl font-semibold text-neutral-800">Welcome back, John</h2>
+                <p class="mt-1 text-neutral-600">Here's your health overview for today</p>
+            </div>
+            <div class="text-right">
+                <p class="text-sm text-neutral-600">Today's Date</p>
+                <p class="text-lg font-medium text-neutral-800">March 14, 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Daily Steps</h3>
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">8,459</p>
+            <p class="mt-1 text-sm text-green-500">+12% from yesterday</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Hours Slept</h3>
+                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">7.5h</p>
+            <p class="mt-1 text-sm text-blue-500">Good sleep quality</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Calories</h3>
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">1,842</p>
+            <p class="mt-1 text-sm text-orange-500">458 remaining</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Mood</h3>
+                <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">Good</p>
+            <p class="mt-1 text-sm text-green-500">Better than yesterday</p>
+        </div>
+    </div>
+
+    <!-- Activity Timeline -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Today's Schedule</h3>
+            <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <div>
+                        <p class="font-medium text-neutral-800">Morning Exercise</p>
+                        <p class="text-sm text-neutral-600">7:00 AM - 8:00 AM</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <div>
+                        <p class="font-medium text-neutral-800">Meditation Session</p>
+                        <p class="text-sm text-neutral-600">12:00 PM - 12:30 PM</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <div>
+                        <p class="font-medium text-neutral-800">Evening Walk</p>
+                        <p class="text-sm text-neutral-600">6:00 PM - 6:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Motivational Quote</h3>
+            <div class="p-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                <p class="italic text-neutral-700">"The only bad workout is the one that didn't happen."</p>
+                <p class="mt-2 text-sm text-neutral-600">- Unknown</p>
+            </div>
+            <div class="mt-4">
+                <h4 class="mb-2 font-medium text-neutral-800">Daily Tips</h4>
+                <ul class="space-y-2 text-sm text-neutral-600">
+                    <li class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Drink 8 glasses of water today</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Take a 5-minute break every hour</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Practice mindful breathing</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode><htmlCode>
+<section id="health_metrics" class="p-6 space-y-6">
+    <!-- Health Score Overview -->
+    <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+        <div class="flex flex-col items-start justify-between md:flex-row md:items-center">
+            <div>
+                <h2 class="text-2xl font-semibold text-neutral-800">Health Metrics Overview</h2>
+                <p class="mt-1 text-neutral-600">Your comprehensive health analysis</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <select class="px-4 py-2 bg-white border rounded-lg border-neutral-200/30 text-neutral-700">
+                    <option value="week">Last 7 days</option>
+                    <option value="month">Last 30 days</option>
+                    <option value="year">Last year</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Metrics Grid -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Heart Rate -->
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-neutral-800">Heart Rate</h3>
+                <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                </svg>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">Current</span>
+                    <span class="text-xl font-bold text-neutral-800">72 bpm</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">Average</span>
+                    <span class="text-neutral-800">68 bpm</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">Peak</span>
+                    <span class="text-neutral-800">125 bpm</span>
+                </div>
+            </div>
+            <div class="h-32 mt-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                <!-- Placeholder for heart rate graph -->
+                <div class="flex items-center justify-center w-full h-full text-neutral-400">
+                    Heart Rate Graph
+                </div>
+            </div>
+        </div>
+
+        <!-- Blood Pressure -->
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-neutral-800">Blood Pressure</h3>
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">Systolic</span>
+                    <span class="text-xl font-bold text-neutral-800">120 mmHg</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">Diastolic</span>
+                    <span class="text-xl font-bold text-neutral-800">80 mmHg</span>
+                </div>
+            </div>
+            <div class="h-32 mt-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                <!-- Placeholder for blood pressure graph -->
+                <div class="flex items-center justify-center w-full h-full text-neutral-400">
+                    Blood Pressure Trend
+                </div>
+            </div>
+        </div>
+
+        <!-- Sleep Quality -->
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-neutral-800">Sleep Quality</h3>
+                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">Deep Sleep</span>
+                    <span class="text-xl font-bold text-neutral-800">2.5 hrs</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">REM Sleep</span>
+                    <span class="text-neutral-800">1.8 hrs</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-neutral-600">Light Sleep</span>
+                    <span class="text-neutral-800">4.2 hrs</span>
+                </div>
+            </div>
+            <div class="h-32 mt-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                <!-- Placeholder for sleep quality graph -->
+                <div class="flex items-center justify-center w-full h-full text-neutral-400">
+                    Sleep Cycle Analysis
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Metrics -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <!-- Weekly Activity -->
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Weekly Activity Overview</h3>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <div class="w-24 text-sm text-neutral-600">Mon</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="w-3/4 h-full bg-green-500 rounded-full"></div>
+                    </div>
+                    <div class="w-16 text-sm text-right text-neutral-600">75%</div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-24 text-sm text-neutral-600">Tue</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="w-4/5 h-full bg-green-500 rounded-full"></div>
+                    </div>
+                    <div class="w-16 text-sm text-right text-neutral-600">80%</div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-24 text-sm text-neutral-600">Wed</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="w-2/3 h-full bg-green-500 rounded-full"></div>
+                    </div>
+                    <div class="w-16 text-sm text-right text-neutral-600">66%</div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-24 text-sm text-neutral-600">Thu</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="h-full bg-green-500 rounded-full w-9/10"></div>
+                    </div>
+                    <div class="w-16 text-sm text-right text-neutral-600">90%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Health Insights -->
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Health Insights</h3>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-4">
+                    <svg class="w-6 h-6 mt-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Excellent Sleep Pattern</p>
+                        <p class="text-sm text-neutral-600">Your sleep quality has improved by 15% this week</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <svg class="w-6 h-6 mt-1 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Heart Rate Variability</p>
+                        <p class="text-sm text-neutral-600">Consider more rest between intense activities</p>
+                    </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <svg class="w-6 h-6 mt-1 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Blood Pressure Trend</p>
+                        <p class="text-sm text-neutral-600">Maintaining optimal levels throughout the week</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode><htmlCode>
+<section id="nutrition_planner" class="p-6 space-y-6">
+    <!-- Nutrition Overview Header -->
+    <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+        <div class="flex flex-col items-start justify-between md:flex-row md:items-center">
+            <div>
+                <h2 class="text-2xl font-semibold text-neutral-800">Nutrition Planner</h2>
+                <p class="mt-1 text-neutral-600">Personalized meal planning and tracking</p>
+            </div>
+            <div class="flex mt-4 space-x-3 md:mt-0">
+                <button class="px-4 py-2 text-white transition-colors bg-green-500 rounded-lg hover:bg-green-600">
+                    Add Meal
+                </button>
+                <button class="px-4 py-2 transition-colors border rounded-lg border-neutral-200/30 hover:bg-neutral-50">
+                    Generate Plan
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Daily Nutrition Stats -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Calories</h3>
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">1,842/2,300</p>
+            <div class="w-full h-2 mt-2 rounded-full bg-neutral-100">
+                <div class="h-2 bg-orange-500 rounded-full" style="width: 80%"></div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Protein</h3>
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">65g/120g</p>
+            <div class="w-full h-2 mt-2 rounded-full bg-neutral-100">
+                <div class="h-2 bg-blue-500 rounded-full" style="width: 54%"></div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Carbs</h3>
+                <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">180g/250g</p>
+            <div class="w-full h-2 mt-2 rounded-full bg-neutral-100">
+                <div class="h-2 bg-yellow-500 rounded-full" style="width: 72%"></div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Fats</h3>
+                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">45g/70g</p>
+            <div class="w-full h-2 mt-2 rounded-full bg-neutral-100">
+                <div class="h-2 bg-purple-500 rounded-full" style="width: 64%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Meal Plan -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Today's Meal Plan</h3>
+            <div class="space-y-4">
+                <div class="flex items-center p-3 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Breakfast</h4>
+                        <p class="text-sm text-neutral-600">Oatmeal with fruits and nuts</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="font-medium text-neutral-800">420</p>
+                        <p class="text-sm text-neutral-600">calories</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center p-3 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Lunch</h4>
+                        <p class="text-sm text-neutral-600">Grilled chicken salad</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="font-medium text-neutral-800">550</p>
+                        <p class="text-sm text-neutral-600">calories</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center p-3 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg">
+                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Dinner</h4>
+                        <p class="text-sm text-neutral-600">Salmon with quinoa</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="font-medium text-neutral-800">680</p>
+                        <p class="text-sm text-neutral-600">calories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Nutrition Tips</h3>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Increase Protein Intake</p>
+                        <p class="text-sm text-neutral-600">Add lean meats or plant-based proteins to meet your daily goals</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Hydration Reminder</p>
+                        <p class="text-sm text-neutral-600">Remember to drink 8 glasses of water throughout the day</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Meal Timing</p>
+                        <p class="text-sm text-neutral-600">Try to eat your meals at consistent times each day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode><htmlCode>
+<section id="exercise_tracker" class="p-6 space-y-6">
+    <!-- Exercise Overview Header -->
+    <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+        <div class="flex flex-col items-start justify-between md:flex-row md:items-center">
+            <div>
+                <h2 class="text-2xl font-semibold text-neutral-800">Exercise Tracker</h2>
+                <p class="mt-1 text-neutral-600">Track and manage your workout routines</p>
+            </div>
+            <div class="flex mt-4 space-x-3 md:mt-0">
+                <button class="px-4 py-2 text-white transition-colors bg-blue-500 rounded-lg hover:bg-blue-600">
+                    Start Workout
+                </button>
+                <button class="px-4 py-2 transition-colors border rounded-lg border-neutral-200/30 hover:bg-neutral-50">
+                    View History
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weekly Progress -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Workouts</h3>
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">12</p>
+            <p class="text-sm text-green-500">+2 this week</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Active Minutes</h3>
+                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">320</p>
+            <p class="text-sm text-green-500">+45 from last week</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Calories Burned</h3>
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">2,450</p>
+            <p class="text-sm text-green-500">+300 from goal</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Streak</h3>
+                <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">5 days</p>
+            <p class="text-sm text-green-500">Personal best!</p>
+        </div>
+    </div>
+
+    <!-- Workout Schedule -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Today's Workout Plan</h3>
+            <div class="space-y-4">
+                <div class="flex items-center p-3 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Cardio</h4>
+                        <p class="text-sm text-neutral-600">30 min Running</p>
+                    </div>
+                    <button class="px-3 py-1 text-sm text-blue-500 border border-blue-500 rounded-lg hover:bg-blue-50">
+                        Start
+                    </button>
+                </div>
+
+                <div class="flex items-center p-3 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg">
+                        <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Strength Training</h4>
+                        <p class="text-sm text-neutral-600">Upper Body - 45 min</p>
+                    </div>
+                    <button class="px-3 py-1 text-sm text-blue-500 border border-blue-500 rounded-lg hover:bg-blue-50">
+                        Start
+                    </button>
+                </div>
+
+                <div class="flex items-center p-3 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Stretching</h4>
+                        <p class="text-sm text-neutral-600">Cool Down - 15 min</p>
+                    </div>
+                    <button class="px-3 py-1 text-sm text-blue-500 border border-blue-500 rounded-lg hover:bg-blue-50">
+                        Start
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercise Tips -->
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Exercise Tips & Recommendations</h3>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Warm Up Properly</p>
+                        <p class="text-sm text-neutral-600">Start with 5-10 minutes of light cardio to prevent injury</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Stay Hydrated</p>
+                        <p class="text-sm text-neutral-600">Drink water before, during, and after your workout</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Rest Between Sets</p>
+                        <p class="text-sm text-neutral-600">Take 30-90 seconds rest between exercises</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode><htmlCode>
+<section id="mental_wellness" class="p-6 space-y-6">
+    <!-- Mental Wellness Header -->
+    <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+        <div class="flex flex-col items-start justify-between md:flex-row md:items-center">
+            <div>
+                <h2 class="text-2xl font-semibold text-neutral-800">Mental Wellness</h2>
+                <p class="mt-1 text-neutral-600">Track your emotional well-being and mindfulness journey</p>
+            </div>
+            <div class="flex mt-4 space-x-3 md:mt-0">
+                <button class="px-4 py-2 text-white transition-colors bg-purple-500 rounded-lg hover:bg-purple-600">
+                    Start Meditation
+                </button>
+                <button class="px-4 py-2 transition-colors border rounded-lg border-neutral-200/30 hover:bg-neutral-50">
+                    Log Mood
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mood Tracking -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Today's Mood</h3>
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-4">
+                    <button class="flex items-center justify-center w-12 h-12 transition-colors bg-yellow-100 rounded-full hover:bg-yellow-200">
+                        <span class="text-2xl">😊</span>
+                    </button>
+                    <button class="flex items-center justify-center w-12 h-12 transition-colors rounded-full bg-neutral-100 hover:bg-neutral-200">
+                        <span class="text-2xl">😐</span>
+                    </button>
+                    <button class="flex items-center justify-center w-12 h-12 transition-colors rounded-full bg-neutral-100 hover:bg-neutral-200">
+                        <span class="text-2xl">😔</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="text-neutral-600">Meditation Minutes</h3>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">45/60</p>
+            <div class="w-full h-2 mt-2 rounded-full bg-neutral-100">
+                <div class="h-2 bg-purple-500 rounded-full" style="width: 75%"></div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="text-neutral-600">Stress Level</h3>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">Low</p>
+            <div class="flex items-center mt-2">
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="ml-2 text-sm text-neutral-600">Better than last week</div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="text-neutral-600">Mindfulness Streak</h3>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">7 days</p>
+            <p class="mt-1 text-sm text-green-500">Personal best!</p>
+        </div>
+    </div>
+
+    <!-- Mindfulness Activities -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Recommended Activities</h3>
+            <div class="space-y-4">
+                <div class="flex items-center p-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg">
+                        <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Guided Meditation</h4>
+                        <p class="text-sm text-neutral-600">15 minutes of mindful breathing</p>
+                    </div>
+                    <button class="px-3 py-1 text-sm text-purple-500 border border-purple-500 rounded-lg hover:bg-purple-50">
+                        Start
+                    </button>
+                </div>
+
+                <div class="flex items-center p-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Breathing Exercise</h4>
+                        <p class="text-sm text-neutral-600">4-7-8 breathing technique</p>
+                    </div>
+                    <button class="px-3 py-1 text-sm text-purple-500 border border-purple-500 rounded-lg hover:bg-purple-50">
+                        Start
+                    </button>
+                </div>
+
+                <div class="flex items-center p-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                    <div class="flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1 ml-4">
+                        <h4 class="font-medium text-neutral-800">Gratitude Journal</h4>
+                        <p class="text-sm text-neutral-600">Write three things you're grateful for</p>
+                    </div>
+                    <button class="px-3 py-1 text-sm text-purple-500 border border-purple-500 rounded-lg hover:bg-purple-50">
+                        Start
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Daily Inspiration</h3>
+            <div class="p-6 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                <p class="text-lg italic text-neutral-800">"The present moment is filled with joy and happiness. If you are attentive, you will see it."</p>
+                <p class="mt-2 text-neutral-600">- Thich Nhat Hanh</p>
+            </div>
+
+            <div class="mt-6">
+                <h4 class="mb-4 font-medium text-neutral-800">Wellness Tips</h4>
+                <div class="space-y-3">
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 mt-1 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <p class="text-neutral-600">Take short mindfulness breaks throughout your day</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 mt-1 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <p class="text-neutral-600">Practice deep breathing when feeling stressed</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 mt-1 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <p class="text-neutral-600">Set boundaries to protect your mental energy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode><htmlCode>
+<section id="sleep_analytics" class="p-6 space-y-6">
+    <!-- Sleep Analytics Header -->
+    <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+        <div class="flex flex-col items-start justify-between md:flex-row md:items-center">
+            <div>
+                <h2 class="text-2xl font-semibold text-neutral-800">Sleep Analytics</h2>
+                <p class="mt-1 text-neutral-600">Monitor and improve your sleep quality</p>
+            </div>
+            <div class="flex mt-4 space-x-3 md:mt-0">
+                <button class="px-4 py-2 text-white transition-colors bg-indigo-500 rounded-lg hover:bg-indigo-600">
+                    Set Sleep Goal
+                </button>
+                <button class="px-4 py-2 transition-colors border rounded-lg border-neutral-200/30 hover:bg-neutral-50">
+                    View History
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sleep Stats -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-4">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Sleep Score</h3>
+                <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">85/100</p>
+            <p class="text-sm text-green-500">+5 from yesterday</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Total Sleep</h3>
+                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">7h 45m</p>
+            <p class="text-sm text-green-500">Within target range</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Sleep Efficiency</h3>
+                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">92%</p>
+            <p class="text-sm text-green-500">Excellent</p>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <div class="flex items-center justify-between">
+                <h3 class="text-neutral-600">Bedtime</h3>
+                <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+            </div>
+            <p class="mt-2 text-2xl font-bold text-neutral-800">10:45 PM</p>
+            <p class="text-sm text-blue-500">Consistent schedule</p>
+        </div>
+    </div>
+
+    <!-- Sleep Cycle Analysis -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Sleep Cycle Analysis</h3>
+            <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-24 text-sm text-neutral-600">Deep Sleep</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="w-1/3 h-full bg-indigo-500 rounded-full"></div>
+                    </div>
+                    <div class="w-20 text-sm text-neutral-600">2h 15m</div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-24 text-sm text-neutral-600">Light Sleep</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="w-1/2 h-full bg-blue-500 rounded-full"></div>
+                    </div>
+                    <div class="w-20 text-sm text-neutral-600">3h 30m</div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-24 text-sm text-neutral-600">REM</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="w-1/4 h-full bg-purple-500 rounded-full"></div>
+                    </div>
+                    <div class="w-20 text-sm text-neutral-600">2h 00m</div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <div class="w-24 text-sm text-neutral-600">Awake</div>
+                    <div class="flex-1 h-4 rounded-full bg-neutral-100">
+                        <div class="h-full w-[15%] bg-yellow-500 rounded-full"></div>
+                    </div>
+                    <div class="w-20 text-sm text-neutral-600">15m</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border rounded-lg border-neutral-200/30">
+            <h3 class="mb-4 text-lg font-semibold text-neutral-800">Sleep Improvement Tips</h3>
+            <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Consistent Sleep Schedule</p>
+                        <p class="text-sm text-neutral-600">Try to go to bed and wake up at the same time daily</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Optimal Room Temperature</p>
+                        <p class="text-sm text-neutral-600">Keep your bedroom between 60-67°F (15-19°C)</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 mt-1 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <div>
+                        <p class="font-medium text-neutral-800">Limit Screen Time</p>
+                        <p class="text-sm text-neutral-600">Avoid blue light exposure 1-2 hours before bed</p>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <h4 class="mb-2 font-medium text-neutral-800">Tonight's Sleep Forecast</h4>
+                    <div class="p-4 border rounded-lg bg-neutral-50 border-neutral-200/30">
+                        <p class="text-neutral-600">Based on your activity today, aim for bedtime at 10:30 PM for optimal rest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="progress_reports" class="min-h-screen px-4 py-12 bg-neutral-900 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <!-- Section Header -->
+            <div class="mb-12 text-center">
+                <h2 class="mb-4 text-3xl font-bold text-white md:text-4xl">Your Health Journey Progress</h2>
+                <p class="max-w-2xl mx-auto text-neutral-400">Track your physical and mental wellness achievements over time</p>
+            </div>
+
+            <!-- Progress Cards Grid -->
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Physical Health Card -->
+                <div class="p-6 transition-all duration-300 border bg-neutral-800 border-neutral-700/30 rounded-xl hover:border-neutral-600/40">
+                    <div class="flex items-start justify-between mb-6">
+                        <h3 class="text-xl font-semibold text-white">Physical Health</h3>
+                        <span class="px-3 py-1 text-sm rounded-full bg-emerald-500/10 text-emerald-400">+12% ↑</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="relative pt-1">
+                            <div class="mb-1 text-sm text-neutral-400">Exercise Goals</div>
+                            <div class="h-2 overflow-hidden rounded bg-neutral-700">
+                                <div class="w-3/4 h-full rounded bg-emerald-500"></div>
+                            </div>
+                        </div>
+                        <div class="relative pt-1">
+                            <div class="mb-1 text-sm text-neutral-400">Diet Adherence</div>
+                            <div class="h-2 overflow-hidden rounded bg-neutral-700">
+                                <div class="w-4/5 h-full rounded bg-emerald-500"></div>
+                            </div>
+                        </div>
+                        <div class="relative pt-1">
+                            <div class="mb-1 text-sm text-neutral-400">Sleep Quality</div>
+                            <div class="h-2 overflow-hidden rounded bg-neutral-700">
+                                <div class="w-2/3 h-full rounded bg-emerald-500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mental Health Card -->
+                <div class="p-6 transition-all duration-300 border bg-neutral-800 border-neutral-700/30 rounded-xl hover:border-neutral-600/40">
+                    <div class="flex items-start justify-between mb-6">
+                        <h3 class="text-xl font-semibold text-white">Mental Wellness</h3>
+                        <span class="px-3 py-1 text-sm text-blue-400 rounded-full bg-blue-500/10">+8% ↑</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="relative pt-1">
+                            <div class="mb-1 text-sm text-neutral-400">Stress Management</div>
+                            <div class="h-2 overflow-hidden rounded bg-neutral-700">
+                                <div class="w-2/3 h-full bg-blue-500 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="relative pt-1">
+                            <div class="mb-1 text-sm text-neutral-400">Mindfulness Practice</div>
+                            <div class="h-2 overflow-hidden rounded bg-neutral-700">
+                                <div class="w-4/5 h-full bg-blue-500 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="relative pt-1">
+                            <div class="mb-1 text-sm text-neutral-400">Mood Stability</div>
+                            <div class="h-2 overflow-hidden rounded bg-neutral-700">
+                                <div class="w-3/4 h-full bg-blue-500 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overall Progress Card -->
+                <div class="p-6 transition-all duration-300 border bg-neutral-800 border-neutral-700/30 rounded-xl hover:border-neutral-600/40">
+                    <div class="flex items-start justify-between mb-6">
+                        <h3 class="text-xl font-semibold text-white">Overall Progress</h3>
+                        <span class="px-3 py-1 text-sm text-purple-400 rounded-full bg-purple-500/10">90% Complete</span>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-neutral-400">Weekly Goals</span>
+                            <span class="font-medium text-white">18/20</span>
+                        </div>
+                        <div class="relative h-32">
+                            <div class="absolute inset-0 flex items-end justify-around">
+                                <div class="w-8 rounded-t bg-purple-500/20" style="height: 40%"></div>
+                                <div class="w-8 rounded-t bg-purple-500/20" style="height: 65%"></div>
+                                <div class="w-8 rounded-t bg-purple-500/20" style="height: 85%"></div>
+                                <div class="w-8 rounded-t bg-purple-500/20" style="height: 55%"></div>
+                                <div class="w-8 rounded-t bg-purple-500/20" style="height: 75%"></div>
+                                <div class="w-8 bg-purple-500 rounded-t" style="height: 90%"></div>
+                                <div class="w-8 rounded-t bg-purple-500/20" style="height: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between text-xs text-neutral-500">
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                            <span>Sun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Statistics -->
+            <div class="p-6 mt-12 border bg-neutral-800 border-neutral-700/30 rounded-xl">
+                <h3 class="mb-6 text-xl font-semibold text-white">Monthly Overview</h3>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="p-4 rounded-lg bg-neutral-700/20">
+                        <p class="text-sm text-neutral-400">Meditation Sessions</p>
+                        <p class="mt-2 text-2xl font-bold text-white">24</p>
+                        <p class="mt-1 text-sm text-green-400">↑ 4 from last month</p>
+                    </div>
+                    <div class="p-4 rounded-lg bg-neutral-700/20">
+                        <p class="text-sm text-neutral-400">Exercise Minutes</p>
+                        <p class="mt-2 text-2xl font-bold text-white">840</p>
+                        <p class="mt-1 text-sm text-green-400">↑ 120 from last month</p>
+                    </div>
+                    <div class="p-4 rounded-lg bg-neutral-700/20">
+                        <p class="text-sm text-neutral-400">Avg. Sleep Hours</p>
+                        <p class="mt-2 text-2xl font-bold text-white">7.5</p>
+                        <p class="mt-1 text-sm text-green-400">↑ 0.5 from last month</p>
+                    </div>
+                    <div class="p-4 rounded-lg bg-neutral-700/20">
+                        <p class="text-sm text-neutral-400">Mood Score</p>
+                        <p class="mt-2 text-2xl font-bold text-white">8.2</p>
+                        <p class="mt-1 text-sm text-green-400">↑ 0.4 from last month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="settings" class="min-h-screen px-4 py-12 bg-neutral-900 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12">
+                <h2 class="mb-4 text-3xl font-bold text-white">Settings</h2>
+                <p class="text-neutral-400">Customize your health and wellness experience</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <!-- Settings Navigation -->
+                <div class="lg:col-span-1">
+                    <div class="p-4 border bg-neutral-800 rounded-xl border-neutral-700/30">
+                        <nav class="space-y-2">
+                            <button class="w-full px-4 py-3 font-medium text-left text-white rounded-lg bg-neutral-700/30">Account Settings</button>
+                            <button class="w-full px-4 py-3 text-left transition-colors rounded-lg text-neutral-400 hover:bg-neutral-700/30">Notifications</button>
+                            <button class="w-full px-4 py-3 text-left transition-colors rounded-lg text-neutral-400 hover:bg-neutral-700/30">Privacy & Security</button>
+                            <button class="w-full px-4 py-3 text-left transition-colors rounded-lg text-neutral-400 hover:bg-neutral-700/30">Health Goals</button>
+                            <button class="w-full px-4 py-3 text-left transition-colors rounded-lg text-neutral-400 hover:bg-neutral-700/30">Integration</button>
+                            <button class="w-full px-4 py-3 text-left transition-colors rounded-lg text-neutral-400 hover:bg-neutral-700/30">Data Management</button>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Settings Content -->
+                <div class="lg:col-span-2">
+                    <div class="p-6 space-y-8 border bg-neutral-800 rounded-xl border-neutral-700/30">
+                        <!-- Profile Section -->
+                        <div class="pb-6 border-b border-neutral-700/30">
+                            <h3 class="mb-6 text-xl font-semibold text-white">Profile Information</h3>
+                            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                                <div>
+                                    <label class="block mb-2 text-sm font-medium text-neutral-400">First Name</label>
+                                    <input type="text" class="w-full px-4 py-2 text-white border rounded-lg bg-neutral-700/30 border-neutral-600/30 focus:outline-none focus:border-blue-500/50">
+                                </div>
+                                <div>
+                                    <label class="block mb-2 text-sm font-medium text-neutral-400">Last Name</label>
+                                    <input type="text" class="w-full px-4 py-2 text-white border rounded-lg bg-neutral-700/30 border-neutral-600/30 focus:outline-none focus:border-blue-500/50">
+                                </div>
+                                <div>
+                                    <label class="block mb-2 text-sm font-medium text-neutral-400">Email</label>
+                                    <input type="email" class="w-full px-4 py-2 text-white border rounded-lg bg-neutral-700/30 border-neutral-600/30 focus:outline-none focus:border-blue-500/50">
+                                </div>
+                                <div>
+                                    <label class="block mb-2 text-sm font-medium text-neutral-400">Phone</label>
+                                    <input type="tel" class="w-full px-4 py-2 text-white border rounded-lg bg-neutral-700/30 border-neutral-600/30 focus:outline-none focus:border-blue-500/50">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Preferences Section -->
+                        <div class="pb-6 border-b border-neutral-700/30">
+                            <h3 class="mb-6 text-xl font-semibold text-white">App Preferences</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-neutral-300">Dark Mode</span>
+                                    <button class="flex items-center w-12 h-6 p-1 bg-blue-500 rounded-full">
+                                        <div class="w-4 h-4 transform translate-x-6 bg-white rounded-full"></div>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-neutral-300">Daily Reminders</span>
+                                    <button class="flex items-center w-12 h-6 p-1 bg-blue-500 rounded-full">
+                                        <div class="w-4 h-4 transform translate-x-6 bg-white rounded-full"></div>
+                                    </button>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-neutral-300">Weekly Reports</span>
+                                    <button class="flex items-center w-12 h-6 p-1 rounded-full bg-neutral-600">
+                                        <div class="w-4 h-4 bg-white rounded-full"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Time Zone Section -->
+                        <div class="pb-6">
+                            <h3 class="mb-6 text-xl font-semibold text-white">Regional Settings</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block mb-2 text-sm font-medium text-neutral-400">Time Zone</label>
+                                    <select class="w-full px-4 py-2 text-white border rounded-lg bg-neutral-700/30 border-neutral-600/30 focus:outline-none focus:border-blue-500/50">
+                                        <option>Pacific Time (PT)</option>
+                                        <option>Mountain Time (MT)</option>
+                                        <option>Central Time (CT)</option>
+                                        <option>Eastern Time (ET)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block mb-2 text-sm font-medium text-neutral-400">Unit System</label>
+                                    <select class="w-full px-4 py-2 text-white border rounded-lg bg-neutral-700/30 border-neutral-600/30 focus:outline-none focus:border-blue-500/50">
+                                        <option>Metric (kg, km)</option>
+                                        <option>Imperial (lb, mi)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Save Button -->
+                        <div class="flex justify-end pt-4">
+                            <button class="px-6 py-2 text-white transition-colors bg-blue-500 rounded-lg hover:bg-blue-600">
+                                Save Changes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="notifications" class="min-h-screen px-4 py-12 bg-neutral-900 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-bold text-white">Notifications</h2>
+                <div class="flex space-x-4">
+                    <button class="transition-colors text-neutral-400 hover:text-white">
+                        Mark all as read
+                    </button>
+                    <button class="transition-colors text-neutral-400 hover:text-white">
+                        Clear all
+                    </button>
+                </div>
+            </div>
+
+            <!-- Notification Filters -->
+            <div class="flex mb-8 space-x-4">
+                <button class="px-4 py-2 text-white bg-blue-500 rounded-lg">All</button>
+                <button class="px-4 py-2 transition-colors rounded-lg bg-neutral-800 text-neutral-400 hover:bg-neutral-700">Health</button>
+                <button class="px-4 py-2 transition-colors rounded-lg bg-neutral-800 text-neutral-400 hover:bg-neutral-700">Exercise</button>
+                <button class="px-4 py-2 transition-colors rounded-lg bg-neutral-800 text-neutral-400 hover:bg-neutral-700">Mindfulness</button>
+                <button class="px-4 py-2 transition-colors rounded-lg bg-neutral-800 text-neutral-400 hover:bg-neutral-700">Goals</button>
+            </div>
+
+            <!-- Notifications List -->
+            <div class="space-y-4">
+                <!-- Today -->
+                <div class="mb-6">
+                    <h3 class="mb-4 text-sm font-medium text-neutral-400">Today</h3>
+                    
+                    <div class="space-y-4">
+                        <!-- Unread Notification -->
+                        <div class="p-4 transition-colors border-l-4 border-blue-500 rounded-lg bg-neutral-800/50 hover:bg-neutral-800">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500/20">
+                                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-white">Time for your meditation session</p>
+                                        <p class="mt-1 text-sm text-neutral-400">Your scheduled mindfulness session starts in 15 minutes</p>
+                                        <p class="mt-2 text-xs text-neutral-500">2 minutes ago</p>
+                                    </div>
+                                </div>
+                                <button class="text-neutral-400 hover:text-white">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Read Notification -->
+                        <div class="p-4 transition-colors rounded-lg bg-neutral-800/30 hover:bg-neutral-800">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-green-500/20">
+                                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-white">Daily goal achieved!</p>
+                                        <p class="mt-1 text-sm text-neutral-400">You've completed your daily step goal of 10,000 steps</p>
+                                        <p class="mt-2 text-xs text-neutral-500">3 hours ago</p>
+                                    </div>
+                                </div>
+                                <button class="text-neutral-400 hover:text-white">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yesterday -->
+                <div class="mb-6">
+                    <h3 class="mb-4 text-sm font-medium text-neutral-400">Yesterday</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="p-4 transition-colors rounded-lg bg-neutral-800/30 hover:bg-neutral-800">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-purple-500/20">
+                                        <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-white">New workout plan available</p>
+                                        <p class="mt-1 text-sm text-neutral-400">Your AI trainer has created a new personalized workout plan</p>
+                                        <p class="mt-2 text-xs text-neutral-500">Yesterday at 2:30 PM</p>
+                                    </div>
+                                </div>
+                                <button class="text-neutral-400 hover:text-white">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="p-4 transition-colors rounded-lg bg-neutral-800/30 hover:bg-neutral-800">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-500/20">
+                                        <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-white">Sleep pattern alert</p>
+                                        <p class="mt-1 text-sm text-neutral-400">Your sleep schedule has been irregular. Here are some tips to improve it.</p>
+                                        <p class="mt-2 text-xs text-neutral-500">Yesterday at 9:00 AM</p>
+                                    </div>
+                                </div>
+                                <button class="text-neutral-400 hover:text-white">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="mt-8 text-center">
+                <button class="px-6 py-3 transition-colors rounded-lg bg-neutral-800 text-neutral-400 hover:bg-neutral-700">
+                    Load More
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode>
