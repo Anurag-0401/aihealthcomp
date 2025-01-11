@@ -1,0 +1,12 @@
+{
+  "name": "health-dashboard",
+  "version": "1.0.0",
+  "description": "Health Dashboard Application",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
